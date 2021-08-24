@@ -6,6 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "_logger",
+    "logger",
+    "debugger",
+    "debug logger"
+  ],
+  "author": "Brandon Ellis",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
 }
