@@ -1,11 +1,9 @@
 var Logger = function() {
-    this.activated = false;
+    // this.activated = window.sessionStorage.getItem("_loggerActive") || false;
     
     this.setDebug = function(activate) {
-        if (activate === true) {
-            this.activated = true;           
-        } else if (activate === false) {
-            this.activated = false;
+        if (activate === true || activate === false) {
+            window.sessionStorage.setItem("_loggerActive", activate);
         } else {
             console.log("function argument must be true or false");
         }
@@ -30,11 +28,13 @@ var Logger = function() {
     //  };
 };
 
+window.sessionStorage.setItem("_loggerActive", false)
+
 var levelTypes = ["log", "warn", "error"];
 
 levelTypes.forEach(function(levelType, i, arr) {
     Logger.prototype[levelType] = function() {
-        if (this.activated) {
+        if (window.sessionStorage.getItem("_loggerActive")) {
            console[levelType](...arguments);    
         } 
     };
@@ -42,5 +42,5 @@ levelTypes.forEach(function(levelType, i, arr) {
 
 window._logger = new Logger();
 
-//module.exports = _logger;
+module.exports = _logger;
 

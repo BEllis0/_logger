@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/BEllis0/_logger.git"
   },
   "keywords": [
     "_logger",
@@ -19,7 +19,7 @@
   "author": "Brandon Ellis",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/BEllis0/_logger"
   },
-  "homepage": ""
+  "homepage": "https://github.com/BEllis0/_logger"
 }
