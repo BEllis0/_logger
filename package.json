@@ -1,5 +1,5 @@
 {
-  "name": "debug_logger",
+  "name": "logger-tool",
   "version": "1.0.0",
   "description": "A simple browser-focused logging tool that can be enabled from the console",
   "main": "index.js",
