@@ -47,6 +47,8 @@ var init = function() {
 };
 
 // module.exports._logger = _logger;
-if (module !== undefined) {
+if (typeof module !== "undefined" && module.exports) {
     module.exports.init = init;
+} else {
+    window.init = init;
 }
