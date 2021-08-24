@@ -42,8 +42,8 @@ levelTypes.forEach(function(levelType, i, arr) {
 
 // window._logger = new Logger();
 
-//module.exports._logger = _logger;
+// module.exports._logger = _logger;
 
-export function init() {
+module.exports.init = function() {
     window._logger = new Logger();
 };
