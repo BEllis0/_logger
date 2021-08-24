@@ -1,6 +1,6 @@
 {
   "name": "logger-tool",
-  "version": "0.0.52",
+  "version": "0.0.53",
   "description": "A simple browser-focused logging tool that can be enabled from the console",
   "main": "index.js",
   "scripts": {

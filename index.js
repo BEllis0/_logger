@@ -34,7 +34,7 @@ var levelTypes = ["log", "warn", "error"];
 
 levelTypes.forEach(function(levelType, i, arr) {
     Logger.prototype[levelType] = function() {
-        if (window.sessionStorage.getItem("_loggerActive")) {
+        if (window.sessionStorage.getItem("_loggerActive") == "true") {
            console[levelType](...arguments);    
         } 
     };
