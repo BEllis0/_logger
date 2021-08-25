@@ -1,7 +1,7 @@
 {
   "name": "logger-tool",
-  "version": "0.0.56",
-  "description": "A simple browser-focused logging tool that can be enabled from the console",
+  "version": "0.0.57",
+  "description": "A simple logging tool that can be used for debugging in the browser.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
