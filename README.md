@@ -2,9 +2,9 @@
 IN BETA: A simple logging tool that can be used for debugging in the browser. Enabled in the console to display your _logger messages and ensure that they are not seen by users. For those familiar with Adobe Launch, the functionality is similar to _satellite.logger.
 
 # Installation
-Currently the package can only be used through a CDN (NPM install coming soon):
-`<script src="https://unpkg.com/logger-tool"></script>`
-or for a specific version:
+Currently the package can only be used through a CDN (NPM install coming soon):<br>
+`<script src="https://unpkg.com/logger-tool"></script>`<br>
+or for a specific version:<br>
 `<script src="https://unpkg.com/logger-tool@VERSION#/index.js"></script>`
 
 # Usage
