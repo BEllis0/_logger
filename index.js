@@ -18,7 +18,7 @@ function buildPrototypes() {
     levelTypes.forEach(function(levelType, i, arr) {
         Logger.prototype[levelType] = function() {
             if (window.sessionStorage.getItem("_loggerActive") == "true") {
-               console[levelType]("_LOGGER     :  ", ...arguments);    
+               console[levelType](`_LOGGER ${levelType.toUpperCase()}    :  `, ...arguments);    
             } 
         };
      });
