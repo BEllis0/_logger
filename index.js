@@ -19,7 +19,8 @@ var Logger = function() {
             method: 'POST',
             body: JSON.stringify(payload),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'x-access-token': config.apiKey
             },
         })
         // .then(response => response.json())
@@ -41,12 +42,11 @@ var Logger = function() {
             config options
             {
                 siteName
-                domain
                 environment
                 page
-                token
+                apiKey
                 apiEndpoint
-                websocket
+                websocket (coming soon)
             }
         */
        // create API / websocket connections based on config
