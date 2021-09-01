@@ -3,7 +3,7 @@ IN BETA: A simple logging tool that can be used for debugging in the browser. En
 
 # Installation
 
-### NPM Install
+-### NPM Install
 `npm i logger-tool`<br>
 
 ### CDN
@@ -34,15 +34,14 @@ A config function can be added to provide extended features to _logger. Example:
 ```javascript
 _logger.config({
     siteName: "Test Site Name",
-    domain: "example.com",
     environment: "staging",
     apiEndpoint: "/api/v1/endpoint",
     websocket: "wss://www.example.com/socketserver",
-    token: "12345"
+    apiKey: "12345" // necessary if connecting to _logger server
 });
 ```
 ### API Endpoint
-If an API endpoint is included in the config, _logger will attempt to POST the incoming messages to the endpoint.
+If an API endpoint is included in the config, _logger will attempt to POST the incoming messages to the endpoint. If you would like to use the _logger app then a valid apiKey needs to be added to the config. An API key is granted when you register for the _logger service. (Coming soon)
 
 ### Websocket (beta)
 If a websocket url is included in the config, _logger will attempt to send incoming messages to the websocket server.
