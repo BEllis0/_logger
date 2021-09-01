@@ -20,7 +20,7 @@ var Logger = function() {
             body: JSON.stringify(payload),
             headers: {
                 'Content-Type': 'application/json',
-                'x-access-token': config.apiKey
+                'apiKey': config.apiKey
             },
         })
         // .then(response => response.json())
