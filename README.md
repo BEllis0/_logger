@@ -3,7 +3,7 @@ IN BETA: A simple logging tool that can be used for debugging in the browser. En
 
 # Installation
 
--### NPM Install
+### NPM Install
 `npm i logger-tool`<br>
 
 ### CDN
@@ -35,6 +35,7 @@ A config function can be added to provide extended features to _logger. Example:
 _logger.config({
     siteName: "Test Site Name",
     environment: "staging",
+    channel: "enterprise",
     apiEndpoint: "/api/v1/endpoint",
     websocket: "wss://www.example.com/socketserver",
     apiKey: "12345" // necessary if connecting to _logger server
