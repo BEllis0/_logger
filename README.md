@@ -4,12 +4,12 @@ IN BETA: A simple logging tool that can be used for debugging in the browser. En
 # Installation
 
 ### NPM Install
-`npm i logger-tool`<br>
+`npm i log-inspector`<br>
 
 ### CDN
-`<script src="https://unpkg.com/logger-tool"></script>`<br>
+`<script src="https://unpkg.com/log-inspector"></script>`<br>
 or for a specific version:<br>
-`<script src="https://unpkg.com/logger-tool@VERSION#/index.js"></script>`
+`<script src="https://unpkg.com/log-inspector@VERSION#/index.js"></script>`
 
 # Usage
 Object: window._logger<br>
